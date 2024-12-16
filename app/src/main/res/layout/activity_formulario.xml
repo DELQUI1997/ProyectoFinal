@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Registrar Pedido"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Nombre:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese su nombre"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Direccion:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese su direccion"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Telefono"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese su direccion"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Email"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="Ingrese su correo"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="91dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/deli" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Servicio"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/local"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Consumo Local"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Delivery"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="118dp"
+                android:layout_height="87dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/comida" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Platillos"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/gallina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Gallina Criolla"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chancho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Chancho frito"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/aji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Aji de Gallina"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/pavita"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Pavita Mechada"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="99dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/refresco" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Bebidas"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chicha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Chicha"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/gaseosa"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Gaseosa"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/pisco"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Pisco Sour"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/vino"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="Vino"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Postres"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/postres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Lista_Postres" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enviar" />
+
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cerrar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Desarrollado por Delqui"
+                android:textAlignment="center"
+                android:textColorHint="#7E4408"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

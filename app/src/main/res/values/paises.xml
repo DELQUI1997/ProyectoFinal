@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lista_Paices">
+        <item>Peru</item>
+        <item>Argentina</item>
+        <item>Brasil</item>
+        <item>Colombia</item>
+        <item>Chile</item>
+        <item>Uruguay</item>
+        <item>Paraguay</item>
+    </string-array>
+</resources>

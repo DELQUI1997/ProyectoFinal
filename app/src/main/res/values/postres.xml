@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lista_Postres">
+        <item>Mazamorra Morada</item>
+        <item>Gelatinas</item>
+        <item>Tortas pastel</item>
+        <item>Helados</item>
+        <item>Torta de leche</item>
+        <item>Chocolates</item>
+        <item>Bombones</item>
+    </string-array>
+</resources>
